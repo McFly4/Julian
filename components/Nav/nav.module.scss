@@ -1,0 +1,69 @@
+@import "../../styles/utilities/font.module.scss";
+@import "../../styles/utilities/color.module.scss";
+@import "../../styles/utilities/font.module.scss";
+@import "../../styles/utilities/spacing.module.scss";
+
+.nav {
+    font-family: $karla;
+    font-size: $font-20;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $px-95;
+
+    &__logo {
+        margin-left: $px-10;
+        width: 15%;
+    }
+
+    &__links {
+        width: $px-400;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: $px-370;
+        .icon {
+            color: $icon;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .icon:hover {
+            color: $icon-hover;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: 2px solid $button-red;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-family: $karla;
+            font-size: $font-20;
+            font-weight: 500;
+            cursor: pointer;
+            margin-right: $px-10;
+            margin-left: $px-20;
+            transition: 0.2s;
+
+            &:hover {
+                border: 2px solid $black;
+            }
+            img {
+                margin-left: $px-10;
+            }
+        }
+    }
+}
