@@ -1,0 +1,16 @@
+@import "../../../styles/utilities/font.module.scss";
+@import "../../../styles/utilities/color.module.scss";
+@import "../../../styles/utilities/spacing.module.scss";
+
+.buttonClassiq {
+    font-family: $karla;
+    background-color: $button-glow;
+    outline: none;
+    border: none;
+    color: $white;
+    padding: $px-10 $px-30;
+    font-size: $font-20;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0px 3px 20px rgba(255, 33, 106, 0.5);
+}

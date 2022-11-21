@@ -1,0 +1,32 @@
+@import "../../../styles/utilities/font.module.scss";
+@import "../../../styles/utilities/color.module.scss";
+@import "../../../styles/utilities/spacing.module.scss";
+
+.malt__btn {
+    font-family: $karla;
+    background-color: transparent;
+    border: 3px solid $button-glow;
+    color: $button-glow;
+    font-size: $font-20;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0px 3px 20px rgba(255, 33, 106, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 285px;
+    height: 60px;
+    transition: 0.2s;
+
+    img {
+        margin-right: $px-15;
+    }
+
+    &:hover {
+        border: 3px solid $white;
+        color: $white;
+        img {
+            filter: brightness(20);
+        }
+    }
+}

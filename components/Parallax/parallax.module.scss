@@ -1,0 +1,52 @@
+@import "../../styles/utilities/color.module.scss";
+@import "../../styles/utilities/spacing.module.scss";
+@import "../../styles/utilities/font.module.scss";
+
+.parallax {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+
+    &__content {
+        background-image: url("../../public/parallax/Parallax.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+
+        &__txt {
+            display: flex;
+            width: 100%;
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: $white;
+            font-family: $karla;
+
+            .title {
+                font-size: $font-100;
+            }
+
+            .subtitle {
+                text-align: center;
+            }
+
+            .subtitle p:first-child {
+                font-size: $font-50;
+            }
+
+            .subtitle p:last-child {
+                font-size: $font-30;
+            }
+
+            .button {
+                margin-top: $px-40;
+                display: flex;
+                width: 500px;
+                justify-content: space-between;
+            }
+        }
+    }
+}
