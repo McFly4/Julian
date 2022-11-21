@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./parallax.module.scss";
-import Image from "next/image";
 import Malt from "../common/Malt/Malt";
 import ButtonClassiq from "../common/button/ButtonClassiq";
 
@@ -14,10 +13,13 @@ export default function Parallax() {
                     </div>
                     <div className={styles.subtitle}>
                         <p>
-                            UI/UX <strong>Designer</strong> • UX{" "}
+                            UI/UX <strong>Designer</strong> • UX
                             <strong>Researcher</strong>
                         </p>
-                        <p>Découvrez les secrets d'un produit à votre succès</p>
+                        <p>
+                            Découvrez les secrets d&apos;un produit à votre
+                            succès
+                        </p>
                     </div>
                     <div className={styles.button}>
                         <ButtonClassiq text="Continue" />
