@@ -1,3 +1,11 @@
-export default function home() {
-    return <h1>Julian ux ui</h1>;
-}
+import Parallax from "../components/Parallax/Parallax";
+
+const home = () => {
+    return (
+        <>
+            <Parallax />
+        </>
+    );
+};
+
+export default home;

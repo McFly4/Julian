@@ -4,6 +4,8 @@
 @import "../../styles/utilities/spacing.module.scss";
 
 .nav {
+    position: fixed;
+    width: 100%;
     font-family: $karla;
     font-size: $font-20;
     font-weight: 500;
@@ -11,6 +13,8 @@
     align-items: center;
     justify-content: space-between;
     height: $px-95;
+    z-index: 999;
+    background-color: $white;
 
     &__logo {
         margin-left: $px-10;
@@ -32,6 +36,7 @@
         align-items: center;
         justify-content: space-between;
         width: $px-370;
+        margin-right: $px-20;
         .icon {
             color: $icon;
             transition: 0.2s;
