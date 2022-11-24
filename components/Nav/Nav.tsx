@@ -17,7 +17,7 @@ export default function Nav() {
         <div className={styles.nav}>
             <div className={styles.nav__logo}>
                 <Image
-                    src="/logos/mainLogo.png"
+                    src="/logos/main_logo.png"
                     alt="logo"
                     width={45}
                     height={45}

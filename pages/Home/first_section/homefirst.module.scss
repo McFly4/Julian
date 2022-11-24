@@ -1,0 +1,146 @@
+@import "../../../styles/utilities/color.module.scss";
+@import "../../../styles/utilities/font.module.scss";
+@import "../../../styles/utilities/spacing.module.scss";
+
+.first {
+    margin-top: $px-100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__text {
+        h1 {
+            font-size: $font-44;
+            font-family: $roboto-slab;
+            font-weight: 700;
+            position: relative;
+            display: flex;
+
+            span {
+                content: "";
+                background-color: #0cf0f5;
+                position: absolute;
+                width: 264px;
+                height: 23px;
+                right: -15px;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+
+        p {
+            font-family: $PT-sans;
+            text-align: center;
+            font-weight: 400;
+            font-size: $font-24;
+            margin-top: $px-20;
+            line-height: 31px;
+            color: $gray;
+        }
+    }
+
+    &__bloc {
+        margin-top: $px-100;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+}
+
+.second {
+    margin-top: $px-200;
+    position: relative;
+
+    span.separator {
+        position: absolute;
+        content: "";
+        border: 1px solid #eff5f7;
+        width: 80%;
+        top: -40px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: $font-16;
+        font-family: $montserrat;
+        font-weight: 700;
+        text-align: center;
+        color: $gray-light;
+    }
+
+    &__title {
+        h1 {
+            font-family: $montserrat;
+            font-size: $font-60;
+            font-weight: 800;
+            text-align: center;
+            color: $blue-dark;
+            margin-top: $px-70;
+
+            span {
+                position: relative;
+            }
+            span:after {
+                background: linear-gradient(
+                    70deg,
+                    #f6c78d 66.93%,
+                    #fcd569 95.79%
+                );
+                content: "";
+                position: absolute;
+                width: 105%;
+                height: 28px;
+                right: -2.5%;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__bloc {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+        margin-top: $px-100;
+        margin-bottom: $px-200;
+
+        &__content {
+            width: 30%;
+            margin: 0 30px;
+            &__header {
+                display: flex;
+                align-items: center;
+                margin-bottom: $px-15;
+                h3 {
+                    font-family: $montserrat;
+                    font-size: $font-26;
+                    font-weight: 600;
+                    color: $blue-dark;
+                    margin-left: $px-20;
+                }
+            }
+
+            &__inner {
+                font-family: $karla;
+                font-weight: 400;
+                font-size: $font-18;
+                color: $gray-dark;
+            }
+        }
+
+        &__content:last-child {
+            margin-top: $px-70;
+        }
+    }
+}
