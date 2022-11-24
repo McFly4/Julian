@@ -45,6 +45,12 @@ export default function homeFirst() {
                 </div>
             </div>
             <div className={styles.second}>
+                {/* <Image
+                    src="/home/satellite.svg"
+                    width={445}
+                    height={750}
+                    alt="Satellite"
+                /> */}
                 <span className={styles.separator}></span>
                 <h2>compétences</h2>
                 <div className={styles.second__title}>
