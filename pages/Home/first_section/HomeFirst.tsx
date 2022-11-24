@@ -13,7 +13,7 @@ export default function homeFirst() {
                         <span></span>
                     </h1>
                     <p>
-                        Est-ce qu'un joli site web vous suffit ? <br />
+                        Est-ce qu&apos;un joli site web vous suffit ? <br />
                         Optons pour un produit que vos clients seront ravis
                         d&apos;utiliser.
                     </p>
