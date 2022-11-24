@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./homeFirst.module.scss";
+import styles from "./homefirst.module.scss";
 import Bloc from "../../../components/common/bloc/Bloc";
 import Image from "next/image";
 
@@ -32,15 +32,15 @@ export default function homeFirst() {
                         bloc_title="Développement Web"
                         bloc_txt="Je vais créer un site Web intuitif
                     adapté à vos objectifs."
-                        src="/home/light.svg"
-                        src_hover="/home/light_hover.svg"
+                        src="/home/laptop.svg"
+                        src_hover="/home/laptop_hover.svg"
                     />
                     <Bloc
                         title="Recherche utilisateur"
                         bloc_title="Recherche utilisateur"
                         bloc_txt="Je recueillerai et évaluerailes commentaires de vos clients."
-                        src="/home/light.svg"
-                        src_hover="/home/light_hover.svg"
+                        src="/home/robot.svg"
+                        src_hover="/home/robot_hover.svg"
                     />
                 </div>
             </div>
