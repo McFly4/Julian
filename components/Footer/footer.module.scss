@@ -1,0 +1,74 @@
+@import "../../styles/utilities/font.module.scss";
+@import "../../styles/utilities/color.module.scss";
+@import "../../styles/utilities/font.module.scss";
+@import "../../styles/utilities/spacing.module.scss";
+
+.footer {
+    background-color: $bg-violet;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-weight: 700;
+            font-size: $font-20;
+            color: $gray;
+        }
+
+        h1 {
+            font-family: $roboto-slab;
+            font-weight: 700;
+            font-size: $font-36;
+            color: $white;
+            margin-top: $px-36;
+            margin-bottom: $px-30;
+        }
+    }
+
+    &__inner {
+        width: 670px;
+        h2 {
+            font-family: $roboto-slab;
+            font-weight: 700;
+            font-size: $font-36;
+            color: $white;
+            text-align: center;
+        }
+    }
+
+    &__footer {
+        p {
+            font-family: $PT-sans;
+            font-weight: 400;
+            font-size: $font-20;
+            color: $white;
+        }
+
+        &__social {
+            margin-top: $px-15;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .nuage {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .guy {
+        position: absolute;
+        left: -50px;
+    }
+}

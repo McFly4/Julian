@@ -1,0 +1,141 @@
+@import "../../../styles/utilities/color.module.scss";
+@import "../../../styles/utilities/font.module.scss";
+@import "../../../styles/utilities/spacing.module.scss";
+
+.third {
+    padding-top: $px-90;
+    background-color: $bg-blue;
+    position: relative;
+    z-index: 2;
+    &__header {
+        width: 650px;
+        padding-bottom: $px-50;
+        margin: 0 auto;
+        position: relative;
+        h1 {
+            font-family: $roboto-slab;
+            font-weight: 700;
+            font-size: $font-48;
+            text-align: center;
+        }
+
+        p {
+            margin-top: $px-25;
+            font-family: $PT-sans;
+            font-size: $font-24;
+            color: $gray;
+            text-align: center;
+
+            strong {
+                color: $black;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        background-color: $white;
+        box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        margin: 0 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+        &__item {
+            display: flex;
+            align-items: center;
+            margin-top: $px-100;
+            width: 80%;
+            justify-content: space-around;
+
+            &__img {
+                position: relative;
+            }
+            img {
+                margin-right: $px-60;
+            }
+            &__text {
+                width: 530px;
+                h2 {
+                    font-family: $roboto-slab;
+                    font-weight: 400;
+                    font-size: $font-36;
+                    color: $blue-light;
+                    position: relative;
+                }
+
+                p {
+                    font-family: $PT-sans;
+                    font-size: $font-20;
+                    font-weight: 400;
+                    color: $gray;
+                    margin-top: $px-15;
+                    position: relative;
+                }
+            }
+        }
+
+        &__item:first-child {
+            margin-top: $px-150;
+        }
+
+        &__item:nth-child(2) {
+            img {
+                margin-left: $px-50;
+                margin-right: 0;
+            }
+        }
+
+        &__itemlast {
+            margin-bottom: $px-50;
+        }
+    }
+
+    .white {
+        content: "";
+        background-color: $white;
+        width: 100%;
+        height: 680px;
+        margin-top: -450px;
+        z-index: -1;
+    }
+
+    .losange {
+        position: absolute;
+        top: -50px;
+        left: 40px;
+    }
+
+    .croix {
+        position: absolute;
+        right: -80px;
+        top: 200px;
+    }
+
+    .triangle {
+        position: absolute;
+        right: 150px;
+        top: -50px;
+        filter: drop-shadow(0px 0px 5px rgb(64 224 136 / 2.5));
+    }
+
+    .rond {
+        position: absolute;
+        right: -35px;
+        bottom: 100px;
+    }
+
+    .zigi {
+        position: absolute;
+        bottom: -150px;
+        right: 200px;
+    }
+
+    .carre {
+        position: absolute;
+        bottom: 250px;
+        left: -50px;
+        filter: drop-shadow(0px 0px 5px rgb(167 159 255 / 2.5));
+    }
+}

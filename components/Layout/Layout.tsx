@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../Nav/Nav";
 import Head from "next/head";
+import Footer from "../Footer/Footer";
 
 export default function Layout({ children }: any) {
     return (
@@ -31,6 +32,7 @@ export default function Layout({ children }: any) {
             </Head>
             <Nav />
             <main>{children}</main>
+            <Footer />
         </>
     );
 }
