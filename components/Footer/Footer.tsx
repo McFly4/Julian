@@ -53,6 +53,13 @@ export default function Footer() {
                     />
                 </div>
             </div>
+            <Image
+                src="/footer/logo.svg"
+                width={155}
+                height={163}
+                alt="logo"
+                className={styles.logo}
+            />
         </div>
     );
 }
