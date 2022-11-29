@@ -31,6 +31,18 @@
         }
     }
 
+    .malt__hover {
+        img {
+            filter: invert(29%) sepia(0%) saturate(1%) hue-rotate(17deg)
+                brightness(97%) contrast(90%);
+            transition: 0.2s;
+        }
+
+        img:hover {
+            filter: unset;
+        }
+    }
+
     &__icons {
         display: flex;
         align-items: center;

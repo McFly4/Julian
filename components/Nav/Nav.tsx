@@ -4,30 +4,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Nav() {
-    const [isHovering, setIsHovering] = useState(false);
-    const onMouseEnter = () => setIsHovering(true);
-    const onMouseLeave = () => setIsHovering(false);
-
     const [buttonHovering, setButtonHovering] = useState(false);
     const onButtonEnter = () => setButtonHovering(true);
     const onButtonLeave = () => setButtonHovering(false);
     return (
         <div className={styles.nav}>
             <div className={styles.nav__logo}>
-                <Image
-                    src="/logos/main_logo.png"
-                    alt="logo"
-                    width={45}
-                    height={45}
-                />
+                <Link href="/">
+                    <Image
+                        src="/logos/main_logo.png"
+                        alt="logo"
+                        width={45}
+                        height={45}
+                    />
+                </Link>
             </div>
             <div className={styles.nav__links}>
                 <ul>
-                    <li>Projets</li>
+                    <Link href="/">
+                        <li>Home</li>
+                    </Link>
                     <li>Services</li>
-                    <li>À propos</li>
+                    <Link href="/propos">
+                        <li>À propos</li>
+                    </Link>
                     <li>Contact</li>
                 </ul>
             </div>
@@ -38,25 +41,15 @@ export default function Nav() {
                     style={{ width: "30px" }}
                 />
                 <div
+                    className={styles.malt__hover}
                     style={{ cursor: "pointer" }}
-                    onMouseEnter={onMouseEnter}
-                    onMouseLeave={onMouseLeave}
                 >
-                    {isHovering ? (
-                        <Image
-                            src="/logos/malt_hover.png"
-                            alt="mail"
-                            width={30}
-                            height={30}
-                        />
-                    ) : (
-                        <Image
-                            src="/logos/malt.png"
-                            alt="mail"
-                            width={30}
-                            height={30}
-                        />
-                    )}
+                    <Image
+                        src="/logos/svgmalt.svg"
+                        alt="mail"
+                        width={30}
+                        height={30}
+                    />
                 </div>
                 <FontAwesomeIcon
                     className={styles.icon}
