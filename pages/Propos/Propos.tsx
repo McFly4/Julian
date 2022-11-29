@@ -24,7 +24,7 @@ export default function Propos() {
                 </div>
                 <div className={styles.propos__header__img}>
                     <Image
-                        src="/propos/julian.svg"
+                        src="/propos/julian.png"
                         width={450}
                         height={600}
                         alt="image"
