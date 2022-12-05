@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./propos.module.scss";
 import MaltDarker from "../../components/common/MaltDarker/MaltDarker";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Propos() {
     return (
@@ -85,7 +86,9 @@ export default function Propos() {
                                 méthode mais aussi la mise en réalisation de la
                                 partie Ui
                             </p>
-                            <h3>En savoir plus &gt;</h3>
+                            <Link href="/Services/UxUi">
+                                <h3>En savoir plus &gt;</h3>
+                            </Link>
                         </div>
                         <div className={styles.carousel__item}>
                             <Image
@@ -102,7 +105,9 @@ export default function Propos() {
                                 immédiatement reconnu, intelligible et de
                                 développer votre notoriété dans le temps.
                             </p>
-                            <h3>En savoir plus &gt;</h3>
+                            <Link href="/Services/IdVisuelle">
+                                <h3>En savoir plus &gt;</h3>
+                            </Link>
                         </div>
                     </div>
                 </div>

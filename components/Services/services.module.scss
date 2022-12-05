@@ -1,0 +1,177 @@
+@import "../../styles/utilities/color.module.scss";
+@import "../../styles/utilities/spacing.module.scss";
+@import "../../styles/utilities/font.module.scss";
+
+.services {
+    padding-top: 95px;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../public/services/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 675px;
+        font-family: Arial, Helvetica, sans-serif;
+
+        h2 {
+            color: $red;
+            font-weight: 700;
+            font-family: $font-24;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin-top: $px-20;
+            color: $white;
+            font-weight: 700;
+            font-size: $font-40;
+        }
+
+        p {
+            margin-top: $px-25;
+            color: $white;
+            font-weight: 400;
+            font-size: $font-20;
+            text-align: center;
+            width: 750px;
+            line-height: 32px;
+        }
+    }
+
+    &__content {
+        height: 1000px;
+        background-color: $white;
+    }
+
+    &__banner {
+        position: relative;
+        width: 100%;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-bottom: 70px;
+
+        .astro {
+            position: absolute;
+            top: -290px;
+            right: 30px;
+        }
+
+        .left {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .croix {
+            position: absolute;
+            top: 20px;
+            left: 250px;
+        }
+
+        &__content {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+
+            h2 {
+                font-weight: 700;
+                font-size: $font-24;
+                text-align: center;
+            }
+
+            &__steps {
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+
+                .item__banner {
+                    color: $black;
+                    font-weight: 400;
+                    font-size: $font-20;
+                    width: 200px;
+                    span {
+                        font-family: $font-20;
+                        color: $red;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    &__yellow {
+        background-color: #f6c78d;
+        width: 100%;
+        height: 440px;
+        position: relative;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .astro__guy {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .zigi {
+            position: absolute;
+            left: 0;
+            bottom: 200px;
+        }
+
+        .container {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__card {
+                background-color: $white;
+                width: 240px;
+                height: 310px;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                justify-content: space-evenly;
+                padding-left: 35px;
+
+                h2 {
+                    color: $black;
+                    font-weight: 700;
+                    font-size: $font-24;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                button {
+                    outline: none;
+                    border: none;
+                    color: $red;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 400;
+                    font-size: $font-16;
+                    background: none;
+                }
+            }
+        }
+    }
+}

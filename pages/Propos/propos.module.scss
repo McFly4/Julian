@@ -127,13 +127,10 @@
         }
 
         &__right {
-            overflow: scroll;
-            overflow-y: hidden;
-
             .carousel {
                 display: flex;
                 justify-content: space-between;
-                width: calc(100% + 100px);
+                width: 900px;
                 height: 500px;
                 display: flex;
                 align-items: center;
