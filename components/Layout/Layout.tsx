@@ -40,6 +40,10 @@ export default function Layout({ children }: any) {
                     href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
                     rel="stylesheet"
                 ></link>
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap"
+                ></link>
             </Head>
             <Nav />
             <main>{children}</main>

@@ -7,11 +7,65 @@ export default function Services(service: any) {
     return (
         <div className={styles.services}>
             <div className={styles.services__header}>
-                <h2>Mon expertise</h2>
-                <h1>{service.title}</h1>
-                <p>{service.title__desc}</p>
+                <div className={styles.services__header__top}>
+                    <h2>Mon expertise</h2>
+                    <h1>{service.title}</h1>
+                    <p>{service.title__desc}</p>
+                </div>
+                <div className={styles.services__header__polygone}>
+                    <h1>Une marque forte,</h1>
+                    <h2>à votre image</h2>
+                </div>
             </div>
-            <div className={styles.services__content}>espace vide encore</div>
+            <div className={styles.services__content}>
+                <div className={styles.container}>
+                    <div className={styles.container__item}>
+                        <Image
+                            src="/services/Credibilite.svg.svg"
+                            width={70}
+                            height={70}
+                            alt="Credibilite"
+                        />
+
+                        <h2>Renforcez votre image de marque</h2>
+                        <p>
+                            Constituant le premier élément vu par le prospect,
+                            l&apos;identité visuelle joue un rôle décisif dans
+                            la décision finale du client.
+                        </p>
+                    </div>
+                    <div className={styles.container__item}>
+                        <Image
+                            src="/services/Concurrence.svg.svg"
+                            width={70}
+                            height={70}
+                            alt="Concurrence"
+                        />
+
+                        <h2>Démarquez-vous de la concurrence</h2>
+                        <p>
+                            Différenciez-vous des autres professionnels et
+                            facilitez la mémorisation de votre marque avec un
+                            logo unique.
+                        </p>
+                    </div>
+                    <div className={styles.container__item}>
+                        <Image
+                            src="/services/Valeurs.svg.svg"
+                            width={70}
+                            height={70}
+                            alt="Valeurs"
+                        />
+
+                        <h2>Transmettez des valeurs fortes</h2>
+                        <p>
+                            Le positionnement marketing de votre agence ou
+                            réseau est spécifique ? Alors créons une identité de
+                            marque qui lui ressemble.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div className={styles.services__banner}>
                 <Image
                     src="/services/astro.svg"

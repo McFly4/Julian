@@ -6,10 +6,6 @@
     padding-top: 95px;
 
     &__header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-image: url(../../public/services/bg.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,35 +13,110 @@
         width: 100%;
         height: 675px;
         font-family: Arial, Helvetica, sans-serif;
+        position: relative;
 
-        h2 {
-            color: $red;
-            font-weight: 700;
-            font-family: $font-24;
-            text-transform: uppercase;
+        &__top {
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+            h2 {
+                margin-top: 100px;
+                color: $red;
+                font-weight: 700;
+                font-size: $font-24;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                margin-top: $px-20;
+                color: $white;
+                font-weight: 700;
+                font-size: $font-40;
+            }
+
+            p {
+                margin-top: $px-25;
+                color: $white;
+                font-weight: 400;
+                font-size: $font-20;
+                text-align: center;
+                width: 750px;
+                line-height: 32px;
+            }
         }
 
-        h1 {
-            margin-top: $px-20;
-            color: $white;
-            font-weight: 700;
-            font-size: $font-40;
-        }
-
-        p {
-            margin-top: $px-25;
-            color: $white;
-            font-weight: 400;
-            font-size: $font-20;
+        &__polygone {
+            clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+            background-color: $white;
+            height: 230px;
+            width: 850px;
+            position: absolute;
+            bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
             text-align: center;
-            width: 750px;
-            line-height: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            h1 {
+                color: $red;
+                font-family: $nunito !important;
+                font-weight: 600;
+                font-size: $font-40;
+            }
+
+            h2 {
+                color: #0f3264;
+                font-family: $nunito;
+                font-weight: 300;
+                font-size: $font-30;
+            }
         }
     }
 
     &__content {
-        height: 1000px;
         background-color: $white;
+        width: 100%;
+        margin-top: 65px;
+
+        .container {
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 185px;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: baseline;
+                font-family: $nunito;
+                width: 315px;
+                color: #0f3264;
+
+                h2 {
+                    margin-top: 50px;
+
+                    font-weight: 600;
+                    font-size: $font-24;
+                    line-height: 32px;
+                    width: 200px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: $font-16;
+                    line-height: 27px;
+                }
+            }
+        }
     }
 
     &__banner {
