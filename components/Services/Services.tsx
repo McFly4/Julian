@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./services.module.scss";
 import Image from "next/image";
-import { basename } from "path";
+import Carousel from "../Carousel/Carousel";
 
 export default function Services(service: any) {
     return (
@@ -65,6 +65,7 @@ export default function Services(service: any) {
                         </p>
                     </div>
                 </div>
+                <Carousel />
             </div>
             <div className={styles.services__banner}>
                 <Image
